@@ -104,11 +104,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 .competences img {
   height: 100px;
-} 
+}
 
 .competences img:hover {
   cursor: pointer;
@@ -301,6 +300,10 @@ footer {
     display: block;
   }
   .projets img {
+    width: 340px;
+  }
+  .run span,
+  .marguerite span {
     width: 340px;
   }
   .marguerite {
