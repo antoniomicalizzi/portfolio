@@ -1,330 +1,57 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+html {
+  width: 100vw;
+  font-size: 14px;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
-  margin: 0;
-}
-h2 {
-  color: #084b8ab2;
-}
-nav {
-  background-color: #084b8ab2;
-  color: #fff;
   display: flex;
-  justify-content: space-between;
-  height: 90px;
-  width: 100%;
-}
-nav .mainMenu {
-  display: flex;
-  list-style: none;
-}
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.5rem;
-}
-nav .mainMenu li a:hover {
-  background: rgba(78, 79, 82, 0.507);
-}
-nav .openMenu {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
-}
-nav .mainMenu .closeMenu {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-}
-
-nav .logo {
-  margin: 6px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.photo {
-  height: 300px;
-  border-radius: 250px;
-  margin-top: 100px;
-}
-img {
-  height: 50px;
-  margin: 30px;
+  flex-direction: column;
 }
 .container {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
-  align-items: center;
-  margin: auto;
+  flex-direction: column;
+  width: 100%;
 }
-.container h2 {
-  margin: auto;
+.photo {
+  border-radius: 50%;
+  margin: 1rem;
 }
 .contact {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 80px;
-  color: #084b8ab2;
+  flex-direction: column;
+  align-items: center;
 }
-.contact a {
-  background: none;
+.contact h2 {
+  text-align: center;
 }
 .logo-contact {
   display: flex;
 }
-.competences {
-  display: block;
-  width: 70%;
-  margin: auto;
-  padding-top: 20px;
+.logo-contact a {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.logo-contact a img {
+  width: 100%;
+  height: auto;
 }
 .logo-competences {
-  margin-top: 50px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-around;
+  row-gap: 2rem;
 }
-.competences img {
-  height: 100px;
-}
-.competences img:hover {
-  cursor: pointer;
-  transform: scale(1.3);
-}
-.apropos {
-  margin-top: 40px;
-  color: #084b8ab2;
-  text-align: justify;
-  padding: 0 30px;
-}
-h2 {
-  text-align: center;
-  padding-bottom: 20px;
-}
-.projets {
+.logo-competences div {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  width: 40%;
 }
-.projets img {
-  height: 250px;
-  width: 400px;
-}
-.projets h3 {
-  text-align: center;
-  color: #084b8ab2;
-}
-.projets a {
-  background: none;
-}
-.run span,
-.marguerite span {
-  height: 250px;
-  width: 400px;
-  text-align: center;
-  position: relative;
-  opacity: 0.8;
-  display: none;
-  margin-left: 30px;
-  background-color: #084b8ab2;
-  backdrop-filter: blur(10px);
-  padding: 20px;
-}
-.run:hover span,
-.marguerite:hover span {
-  margin-top: -280px;
-  transition: 1s;
-  display: block;
-  color: white;
-  font-size: large;
-}
-.btn-run {
-  position: absolute;
-  margin-left: 150px;
-  cursor: pointer;
-}
-.btn-marguerite {
-  position: absolute;
-  margin-left: 150px;
-  cursor: pointer;
-}
-button {
-  background-color: #084b8ab2;
-  border: none;
-  padding: 5px;
-  color: white;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgb(155, 153, 153);
-  margin-left: 20px;
-  margin-top: 10px;
-}
-.experiences {
-  display: flex;
-  justify-content: space-around;
-  margin: 150px 50px 50px;
-}
-.experiences h2,
-.competences h2,
-#onglet-projets,
-.formation h2 {
-  color: #084b8ab2;
-  margin-top: 75px;
-  font-size: 50px;
-}
-.experiences-list {
-  background: #084b8ab2;
-  color: white;
-  padding: 10px;
-  width: 70%;
-  line-height: 1, 5px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 4px rgb(155, 153, 153);
-}
-.experiences-list h3 {
-  text-align: center;
-  margin: 5px;
-}
-.experiences-list li {
-  padding: 10px;
-}
-.formation {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-}
-.formations-list {
-  background: #084b8ab2;
-  color: white;
-  padding: 10px;
-  width: 70%;
-  line-height: 1, 5px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 4px rgb(155, 153, 153);
-}
-.formations-list h3 {
-  text-align: center;
-  margin: 5px;
-}
-.formations-list li {
-  padding: 10px;
-}
-footer {
-  background-color: #084b8ab2;
-  height: 80px;
+.logo-competences img {
   width: 100%;
-  text-align: center;
-  line-height: 80px;
-  color: white;
-  font-size: large;
+  max-height: 10rem;
+  object-fit: contain;
 }
 
-@media (max-width: 858px) {
-  .body {
-    justify-content: center;
-  }
-  .nav {
-    width: 100%;
-  }
-  nav .mainMenu {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #084b8ab2;
-    transition: top 1s ease;
-    display: none;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .openMenu {
-    display: block;
-  }
-  nav .mainMenu li a:hover {
-    background: none;
-    color: rgba(78, 79, 82, 0.507);
-    font-size: 1.6rem;
-  }
-  label.logo {
-    font-size: 15px;
-  }
-
-  .contact {
-    flex-direction: column;
-  }
-  .apropos p {
-    font-size: 20px;
-  }
-  .container {
-    display: block;
-  }
-  .logo-contact {
-    width: 5px;
-  }
-  .competences img {
-    height: 40px;
-    justify-content: space-around;
-  }
-  .projets {
-    display: block;
-  }
-  .projets img {
-    width: 340px;
-  }
-  .marguerite {
-    margin-top: 50px;
-  }
-  .experiences {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .experiences {
-    align-items: center;
-  }
-  .experiences-list {
-    width: 95%;
-  }
-  .formation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .formations-list {
-    width: 95%;
-  }
-  .experiences h2,
-  .competences h2,
-  #onglet-projets,
-  .formation h2 {
-    margin-top: 5px;
-  }
-  footer {
-    font-size: 15px;
-  }
-}
+ 
