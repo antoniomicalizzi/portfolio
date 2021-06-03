@@ -146,14 +146,14 @@ h2 {
   position: relative;
   opacity: 0.8;
   display: none;
-  margin-left: 30px;
+  margin-left: 15px;
   background-color: #084b8ab2;
   backdrop-filter: blur(10px);
   padding: 20px;
 }
 .run:hover span,
 .marguerite:hover span {
-  margin-top: -280px;
+  margin-top: -262px;
   transition: 1s;
   display: block;
   color: white;
@@ -304,6 +304,7 @@ footer {
   .run span,
   .marguerite span {
     width: 300px;
+    margin-left: 15px;
   }
   .marguerite {
     margin-top: 50px;
