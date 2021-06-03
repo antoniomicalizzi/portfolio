@@ -60,7 +60,6 @@ nav .logo {
   font-size: 25px;
   cursor: pointer;
 }
-
 .photo {
   height: 300px;
   border-radius: 250px;
@@ -68,7 +67,7 @@ nav .logo {
 }
 img {
   height: 50px;
-  margin: 30px;
+  margin: 15px;
 }
 .container {
   display: flex;
@@ -279,7 +278,10 @@ footer {
   label.logo {
     font-size: 15px;
   }
-
+  .photo {
+    height: 240px;
+    margin-top: 60px;
+  }
   .contact {
     flex-direction: column;
   }
@@ -289,9 +291,6 @@ footer {
   .container {
     display: block;
   }
-  .logo-contact {
-    width: 5px;
-  }
   .competences img {
     height: 40px;
     justify-content: space-around;
@@ -300,11 +299,11 @@ footer {
     display: block;
   }
   .projets img {
-    width: 340px;
+    width: 300px;
   }
   .run span,
   .marguerite span {
-    width: 340px;
+    width: 300px;
   }
   .marguerite {
     margin-top: 50px;
@@ -335,6 +334,7 @@ footer {
   #onglet-projets,
   .formation h2 {
     margin-top: 5px;
+    font-size: 30px;
   }
   footer {
     font-size: 15px;
